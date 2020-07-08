@@ -1,0 +1,239 @@
+// RFS import
+@import "../../node_modules/rfs/stylus.styl";
+
+// Font imports
+@font-face
+   font-family Exo
+   font-weight bold
+   src url(/fonts/Exo2-Bold.ttf)
+
+@font-face
+   font-family Exo
+   font-weight 100
+   src url(/fonts/Exo2-Regular.ttf)
+  
+@font-face
+   font-family Vollkorn
+   font-weight regular
+   src url(/fonts/Vollkorn-regular.ttf)
+
+@font-face
+   font-family Vollkorn
+   font-weight bold
+   src url(/fonts/Vollkorn-Bold.ttf)
+
+@font-face
+   font-family ApexSansBold
+   src url(/fonts/ApexSansBoldST.ttf)
+   
+// Colour palette
+white = #ffffff
+black = #000000
+darkGrey = #444444
+
+fern = #1ab471
+navy = #1b4855
+azure = #5dc1ee
+hazelnut = #726658
+vermillion = #f15a29
+mustard = #fbb040
+
+.white
+	color white
+
+.azure
+	color azure
+
+.hazelnut
+	color hazelnut
+
+.vermillion
+	color vermillion
+
+.mustard
+	color mustard
+
+// General style
+html
+	scroll-behavior smooth
+body
+	font-family 'Vollkorn'
+	margin 0
+	padding 0
+	// background-color cream
+
+h1, h2, h3, h4, h5, h6
+	font-family 'Exo'
+	color brown
+
+h1
+	rfs(2rem)
+
+button
+	background-color rgba(0,0,0,0)
+	color fern
+	border-radius 10px
+	border-color fern
+	border-width 4px
+	border-style solid
+	padding 7px 20px 5px 20px
+	transition 0.2s
+	margin-right 5px
+	margin-bottom 10px
+
+button:hover
+	background-color  fern
+	color white
+
+p
+	rfs(1rem)
+	color #555
+	
+a
+	text-decoration none
+
+img
+	width 100%
+	margin-bottom 20px
+
+video
+	width  100%
+
+.widthRestriction
+	width 90%
+	margin 0 auto
+
+.bold
+	font-weight bold
+	
+.italic
+	font-style italic
+
+.center
+	text-align center
+
+.github
+	font-family 'ApexSansBold'
+	font-weight bolder
+
+.gradient 
+	width 80%
+	height 8px
+	margin 0 auto
+	margin-top 40px
+	margin-bottom 60px
+	border-radius 20px
+	background-color #00ff00
+
+.azure-fern
+	background-image linear-gradient(175deg, #5dc1ee 0%, #49f5aa 70%)
+
+.fern-mustard
+	background-image linear-gradient(175deg, #49f5aa 0%, #fcdb60 80%)
+
+// Topnav
+nav
+   width 100%
+   display inline-block
+   padding-top 15px
+   padding-bottom 10px
+   position fixed 
+   top 0px
+   text-align right
+   white-space nowrap
+   overflow-x auto
+   z-index 2
+   background-color fern
+
+.logo, .topnavLinks
+   display inline-block
+
+.logo
+   float left
+   padding-right 20px
+   font-family 'Exo'
+   font-weight bolder
+   color white
+   rfs(2rem)
+
+.topnavLinks
+   display block
+
+.topnavLinks a
+   margin-right 13px
+   transition 0.2s
+   color white
+   rfs(1rem)
+
+.topnavLinks a:hover
+   padding-bottom 5px
+   border-bottom 1px solid white
+  
+// Slideshow
+.slideshow
+	width 100%
+	height 100%
+
+.slide
+	height 100%
+	background-position 50% 50% // x% y% x(100%)=right and y(100%)=bottom
+	background-repeat no-repeat
+	background-attachment scroll
+	background-size cover
+	padding-top 270px
+	text-align center
+	color white
+
+.slide h1
+	rfs(2.5rem)
+	color white
+	width auto
+
+.slide h2
+	color white
+
+#slide1
+	background-image url('/images/carousel/slideThree.jpeg')
+
+#slide2
+	background-image url('/images/carousel/slideTwo.jpeg')
+
+#slide3
+	background-image url('/images/carousel/slideOne.jpeg')
+
+// Footer
+footer
+	background-color navy
+	color white
+
+footer .reachContact p
+	margin-bottom 10px
+	rfs(1rem)
+	font-weight bold
+	color white
+	
+
+footer li
+	margin-bottom 10px
+	rfs(1rem)
+	font-weight bold
+
+footer a
+	font-weight 100
+	transition 0.2s
+	color white
+	padding-bottom 2px
+	border-bottom 1px solid navy
+	margin-right 10px
+	rfs(1rem)
+  
+footer a:hover
+	padding-bottom 2px
+	border-bottom 1px solid azure
+
+footer .col-lg-5 p
+	text-align center
+	rfs(1.2rem)
+
+footer .col-lg-5 p a
+	rfs(1.2rem)

@@ -1,0 +1,112 @@
+section
+	br
+	.widthRestriction
+		//- h1.mustard Test test test
+		.row
+			//- .col-lg-6
+				//- img(src="/images/imageOne.jpeg")
+			.col-lg-1
+			.col-lg-10.center
+				br
+				br
+				h1.mustard.center Welcome to a student-led initiative towards helping those in need
+				p.center 
+					| This fundraiser drive is meant to raise money for those that have been worst affected by the Coronavirus crisis. For the privileged, lockdown has been a simple inconvenience; for the deprived, it has been a battle for life and death. This is an opportunity for those that have resources to help others in need. The defining trait that distinguishes this program from the numerous other campaigns occurring currently is that it ensures complete transparency. Donors will be able to see exactly who their contributions are going towards, what they are going to be used to provide, and the success that they have helped achieve. Join us in giving a hearth to those who have lost their homes.
+		br
+		br
+		.gradient.azure-fern
+		.row
+			.col-lg-4
+				img(src="/images/imageTwo.jpeg")
+			.col-lg-4
+				img(src="/images/imageFour.jpeg")
+			.col-lg-4
+				img(src="/images/imageOne.jpeg")#ourWork
+				//- img(src="/images/imageThree.jpeg")
+
+		.row
+			.col-lg-6
+				h1.vermillion Our Work
+				p 
+					span.italic
+						| Mission to Support the Gosavi Community in Hubli, Karnataka
+					br
+					br
+					| This was a small-scale initiative that aimed to assist 39 families of the Gosavi community living in 
+					a(href="https://maps.app.goo.gl/sZ7dbkEbAiaRYXM7A" target="_blank").vermillion this 
+					| slum in the Hubli district of Karnataka. Out of the 39 families, 27 families had more than 5 people living under a single roof including children. It specifically targeted only those members of the slum so as to ensure that it could provide focussed aid and enable them to come out of the extreme poverty that they had been plunged into in wake of the pandemic. The volunteers conducted a survey so as to gather details about all families that were supported. These details are open to all and can be accessed 
+					a(href="https://drive.google.com/file/d/1H69Q0z0noo-QmerZZAfpey4wlZ0yrFTP/view?usp=sharing" target="_blank").vermillion here
+					| . The items supplied were meant to fill in for the rations that they were unable to obtain. The following were some of the food items provided:
+				.row
+					.col-lg-6
+						ul
+							li Onion
+							li Tomato
+							li Oil
+							li Toor Dal
+					.col-lg-6
+						ul
+							li Spices
+							li Chillies
+							li Atta
+							li Aloo
+				p
+					| Each food kit cost Rs. 500 and was able to feed 4 people for a month. The team raised approximately Rs. 40,000 for a total of 300 people. This mission was carried out in a very short duration (less than a month) with incredible efficacy. A follow-up survey revealed the receiver’s grateful satisfaction at the team’s benevolence that allowed them to survive their harsh living conditions. 
+				h2.mustard Other Programmes
+				a(href="https://medium.com/@ReapBenefit/lockdown-legends-kaumudi-nagaraju-f9b76175ce56")
+					button 🤝 Collaboration with LSF
+				a(href="https://www.edexlive.com/beinspired/2020/may/14/bengalurus-reap-benefits-solve-ninja-has-made-it-easier-for-you-to-find-local-shops-amid-covid-19-lockdown-12001.html")
+					button 	🏪 Optimizing Shopping in Bangalore
+				a(href="https://medium.com/@ReapBenefit/meet-shwetha-shree-this-weeks-lockdown-legend-fa3fb0ed715d")
+					button#currentObjective 👶 Contribution by a Young Volunteer
+
+			.col-lg-6
+				img(src="/images/imageFive.jpeg")
+		.gradient.fern-mustard
+		.row
+			.col-lg-6
+				img(src="/images/carouselTwo/1.jpg")#slideshowTwo
+			.col-lg-6
+				//- h1.azure Get involved with us
+				h1.mustard Current Objective
+				p#donate
+					| During the aforementioned mission in Hubli, our volunteer team encountered several other communities that were equally as impoverished. Now that they have successfully addressed one section, they hope to help others that have been beset by similar hardships. 
+					a(href="https://docs.google.com/spreadsheets/d/1oMt_uMrFss3iFN_ionDthziL51skmHXKCN7DOMJo5VQ/edit?usp=sharing").vermillion These 
+					| are the other families of the Gosavi community that have been identified as the worst affected in 
+					a(href="https://maps.app.goo.gl/ipiZ8X9thPF86TWUA").vermillion this 
+					| nearby area within Hubli itself, and thus must be helped in any way possible. As you can see on the slideshow on the left, temporary shelters and substandard encampments in the colony house 52 families, with many unable to secure basic food items or amenities. The volunteers are looking to raise money to prepare Basic Food and Sanitation Kits. The kits will include the following items:
+				.row
+					.col-lg-6
+						ul
+							li Atta
+							li Daal
+							li Cooking oil
+							li Onion
+							li Potato
+					.col-lg-6
+						ul
+							li Salt
+							li Sugar
+							li Chilly powder/spices
+							li Bathing soap
+							li Washing soap
+				p
+					| There will be two variants for the kits. Families having upto 5 members will be provided the smaller version, costing approximately Rs. 700 each. For larger families, of which there are 27 (as can be seen in the linked spreadsheet), a larger kit will be provided that has an estimated cost of Rs. 1000. The total campaign hopes to raise around Rs. 45000 in total to meet all expenses. Since the volunteers have already undertaken a similar mission within the same district (see Our Work), they will be able to carry out all necessary duties with exceeding efficiency, focussing their efforts on what truly matters: bettering the lives of the less fortunate. 
+				a(href="https://bit.ly/3dJpwUJ" target="_blank")
+					button Donate Here
+				script.
+					var slideshowTwo = document.getElementById("slideshowTwo");
+
+					var slideIndexTwo = 0;
+					showSlidesTwo();
+
+					var j = 1;
+					function showSlidesTwo() {
+						slideshowTwo.src = "/images/carouselTwo/" + j + ".jpg";
+						j += 1;
+						if (j > 8) {
+							j = 1
+						};
+						console.log(j);
+						setTimeout(showSlidesTwo, 2000); // Change image every 2 seconds
+					}

@@ -1,0 +1,14 @@
+nav#nav
+	div.widthRestriction
+		h1.logo#logo ReapBenefit Fundraiser
+		div.topnavLinks#topnavLinks
+			a(href="#ourWork") Our Work
+			a(href="#currentObjective") Current Objective
+			a(href="#donate") Donate
+			a(href="#reachUs") Reach us
+	script.
+		var nav = document.getElementById("nav");
+		var logo = document.getElementById("logo");
+		var links = document.getElementById("topnavLinks");
+
+		links.style.paddingTop = (logo.offsetHeight - links.offsetHeight)/2;

@@ -1,0 +1,240 @@
+@font-face {
+  font-family: Exo;
+  font-weight: bold;
+  src: url("/fonts/Exo2-Bold.ttf");
+}
+@font-face {
+  font-family: Exo;
+  font-weight: 100;
+  src: url("/fonts/Exo2-Regular.ttf");
+}
+@font-face {
+  font-family: Vollkorn;
+  font-weight: regular;
+  src: url("/fonts/Vollkorn-regular.ttf");
+}
+@font-face {
+  font-family: Vollkorn;
+  font-weight: bold;
+  src: url("/fonts/Vollkorn-Bold.ttf");
+}
+@font-face {
+  font-family: ApexSansBold;
+  src: url("/fonts/ApexSansBoldST.ttf");
+}
+.white {
+  color: #fff;
+}
+.azure {
+  color: #5dc1ee;
+}
+.hazelnut {
+  color: #726658;
+}
+.vermillion {
+  color: #f15a29;
+}
+.mustard {
+  color: #fbb040;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Vollkorn';
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Exo';
+  color: #a52a2a;
+}
+h1 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+button {
+  background-color: rgba(0,0,0,0);
+  color: #1ab471;
+  border-radius: 10px;
+  border-color: #1ab471;
+  border-width: 4px;
+  border-style: solid;
+  padding: 7px 20px 5px 20px;
+  transition: 0.2s;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+button:hover {
+  background-color: #1ab471;
+  color: #fff;
+}
+p {
+  font-size: 1rem;
+  color: #555;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+video {
+  width: 100%;
+}
+.widthRestriction {
+  width: 90%;
+  margin: 0 auto;
+}
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+.center {
+  text-align: center;
+}
+.github {
+  font-family: 'ApexSansBold';
+  font-weight: bolder;
+}
+.gradient {
+  width: 80%;
+  height: 8px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  border-radius: 20px;
+  background-color: #0f0;
+}
+.azure-fern {
+  background-image: linear-gradient(175deg, #5dc1ee 0%, #49f5aa 70%);
+}
+.fern-mustard {
+  background-image: linear-gradient(175deg, #49f5aa 0%, #fcdb60 80%);
+}
+nav {
+  width: 100%;
+  display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  position: fixed;
+  top: 0px;
+  text-align: right;
+  white-space: nowrap;
+  overflow-x: auto;
+  z-index: 2;
+  background-color: #1ab471;
+}
+.logo,
+.topnavLinks {
+  display: inline-block;
+}
+.logo {
+  float: left;
+  padding-right: 20px;
+  font-family: 'Exo';
+  font-weight: bolder;
+  color: #fff;
+  font-size: calc(1.325rem + 0.9vw);
+}
+@media (min-width: 1200px) {
+  .logo {
+    font-size: 2rem;
+  }
+}
+.topnavLinks {
+  display: block;
+}
+.topnavLinks a {
+  margin-right: 13px;
+  transition: 0.2s;
+  color: #fff;
+  font-size: 1rem;
+}
+.topnavLinks a:hover {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.slideshow {
+  width: 100%;
+  height: 100%;
+}
+.slide {
+  height: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  padding-top: 270px;
+  text-align: center;
+  color: #fff;
+}
+.slide h1 {
+  font-size: calc(1.375rem + 1.5vw);
+  color: #fff;
+  width: auto;
+}
+@media (min-width: 1200px) {
+  .slide h1 {
+    font-size: 2.5rem;
+  }
+}
+.slide h2 {
+  color: #fff;
+}
+#slide1 {
+  background-image: url("/images/carousel/slideThree.jpeg");
+}
+#slide2 {
+  background-image: url("/images/carousel/slideTwo.jpeg");
+}
+#slide3 {
+  background-image: url("/images/carousel/slideOne.jpeg");
+}
+footer {
+  background-color: #1b4855;
+  color: #fff;
+}
+footer .reachContact p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+footer li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+footer a {
+  font-weight: 100;
+  transition: 0.2s;
+  color: #fff;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #1b4855;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+footer a:hover {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #5dc1ee;
+}
+footer .col-lg-5 p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+footer .col-lg-5 p a {
+  font-size: 1.2rem;
+}
