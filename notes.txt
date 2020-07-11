@@ -1,2 +1,0 @@
-- Make GitHub repo for Arduino drums 
-- Make GitHub repo for Alexa automation
